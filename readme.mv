@@ -1,0 +1,39 @@
+Proyecto: CRUD Django Restframework
+
+Descripción
+Este proyecto es una aplicación web que permite a los usuarios ver, crear, actualizar y eliminar. 
+Utiliza Django para el backend (API REST)
+
+Instalación y Configuración
+Backend (Django):
+Clona este repositorio:
+git clone https://github.com/EverDuvan/.........
+
+Crea un entorno virtual y actívalo:
+python -m venv env (windows)     python3 -m venv env (linux)
+env\Scripts\activate(windows)    source env/bin/activate (linux)
+
+Instala las dependencias:
+pip install -r requirements.txt
+
+Ejecuta las migraciones:
+python manage.py migrate
+Inicia el servidor:
+python manage.py runserver.
+
+
+Estructura del Proyecto
+backend/
+settings.py: Configuración de la aplicación Django.
+models.py: Modelos para los tutoriales.
+views.py: Vistas basadas en clases para las API REST.
+
+Ejecución del Proyecto
+Inicia el servidor Django: 
+python manage.py runserver.
+
+Contribución y Licencia
+Si deseas contribuir, crea una rama y envía una solicitud de extracción.
+
+Recursos Adicionales
+Django Rest Framework
