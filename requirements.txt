@@ -1,3 +1,5 @@
 django
 djangorestframework
-psicops2
+psycops2
+django-cors-headers
+coreapi
