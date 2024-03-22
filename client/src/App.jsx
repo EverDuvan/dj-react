@@ -6,13 +6,7 @@ import { Navigation } from "./components/Navigation";
 function App() {
   return (
     <BrowserRouter>
-      <Navigation
-        title="Tasks App"
-        links={[
-          { to: "/tasks", label: "Tasks" },
-          { to: "/tasks-create", label: "Create Task" },
-        ]}
-      />
+      <Navigation/>
       <Routes>
         <Route path="/" element={<Navigate to="/tasks" />} />
         <Route path="/tasks" element={<TasksPage />} />

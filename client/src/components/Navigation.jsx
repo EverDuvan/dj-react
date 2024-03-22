@@ -1,10 +1,12 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function Navigation() {
   return (
     <div>
-      <h1>Task App</h1>
-      <link to="/tasks-create">create Task</link> /
+      <Link to="/tasks">
+        <h1>Task App</h1>
+      </Link>
+      <Link to="/tasks-create">Create Task</Link> /
     </div>
   );
 }
