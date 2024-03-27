@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { getAllTasks } from "../api/tasks.api";
+import { TaskCard } from "./TaskCard";
 
 export function TasksList() {
   const [tasks, setTasks] = useState([]);
+
   useEffect(() => {
     async function loadTasks() {
       const res = await getAllTasks();
@@ -13,19 +15,7 @@ export function TasksList() {
 
   return <div>
       {tasks.map(task => (
-        <div key={task.id} className=""
-        style={{
-          width: "18rem",
-          margin: "1rem",
-          padding: "1rem",
-          borderRadius: "1rem",
-          boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
-          backgroundColor: "#f8f8f8",
-        }}>
-          <h1>{task.title}</h1>
-          <p>{task.description}</p>
-          <p>{task.done ? "Done" : "Not done"}</p>
-        </div>
+        <TaskCard key={task.id} Task={task} />
       ))}
     </div>
 }
